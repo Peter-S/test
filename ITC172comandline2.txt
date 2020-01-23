@@ -1,0 +1,73 @@
+Microsoft Windows [Version 10.0.18362.592]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\lmnop>cd documents/pythonclass
+
+C:\Users\lmnop\Documents\PythonClass>python -m venv env01
+
+C:\Users\lmnop\Documents\PythonClass>dir
+ Volume in drive C is OS
+ Volume Serial Number is 323C-645B
+
+ Directory of C:\Users\lmnop\Documents\PythonClass
+
+01/22/2020  02:18 PM    <DIR>          .
+01/22/2020  02:18 PM    <DIR>          ..
+01/22/2020  02:18 PM    <DIR>          env01
+               0 File(s)              0 bytes
+               3 Dir(s)  179,887,439,872 bytes free
+
+C:\Users\lmnop\Documents\PythonClass>env01\scripts\activate
+
+(env01) C:\Users\lmnop\Documents\PythonClass>pip install django
+Collecting django
+  Downloading https://files.pythonhosted.org/packages/55/d1/8ade70e65fa157e1903fe4078305ca53b6819ab212d9fbbe5755afc8ea2e/Django-3.0.2-py3-none-any.whl (7.4MB)
+     |████████████████████████████████| 7.4MB 2.2MB/s
+Collecting pytz (from django)
+  Using cached https://files.pythonhosted.org/packages/e7/f9/f0b53f88060247251bf481fa6ea62cd0d25bf1b11a87888e53ce5b7c8ad2/pytz-2019.3-py2.py3-none-any.whl
+Collecting sqlparse>=0.2.2 (from django)
+  Using cached https://files.pythonhosted.org/packages/ef/53/900f7d2a54557c6a37886585a91336520e5539e3ae2423ff1102daf4f3a7/sqlparse-0.3.0-py2.py3-none-any.whl
+Collecting asgiref~=3.2 (from django)
+  Downloading https://files.pythonhosted.org/packages/a5/cb/5a235b605a9753ebcb2730c75e610fb51c8cab3f01230080a8229fa36adb/asgiref-3.2.3-py2.py3-none-any.whl
+Installing collected packages: pytz, sqlparse, asgiref, django
+Successfully installed asgiref-3.2.3 django-3.0.2 pytz-2019.3 sqlparse-0.3.0
+WARNING: You are using pip version 19.2.3, however version 20.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+(env01) C:\Users\lmnop\Documents\PythonClass>django-admin startproject pythonproject
+
+(env01) C:\Users\lmnop\Documents\PythonClass>dir
+ Volume in drive C is OS
+ Volume Serial Number is 323C-645B
+
+ Directory of C:\Users\lmnop\Documents\PythonClass
+
+01/22/2020  02:22 PM    <DIR>          .
+01/22/2020  02:22 PM    <DIR>          ..
+01/22/2020  02:18 PM    <DIR>          env01
+01/22/2020  02:22 PM    <DIR>          pythonproject
+               0 File(s)              0 bytes
+               4 Dir(s)  179,595,292,672 bytes free
+
+(env01) C:\Users\lmnop\Documents\PythonClass>python manage.py startapp pythonapp
+C:\Users\lmnop\AppData\Local\Programs\Python\Python38-32\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+
+(env01) C:\Users\lmnop\Documents\PythonClass>cd pythonproject
+
+(env01) C:\Users\lmnop\Documents\PythonClass\pythonproject>python manage.py startapp pythonapp
+
+(env01) C:\Users\lmnop\Documents\PythonClass\pythonproject>dir
+ Volume in drive C is OS
+ Volume Serial Number is 323C-645B
+
+ Directory of C:\Users\lmnop\Documents\PythonClass\pythonproject
+
+01/22/2020  02:24 PM    <DIR>          .
+01/22/2020  02:24 PM    <DIR>          ..
+01/22/2020  02:22 PM               654 manage.py
+01/22/2020  02:24 PM    <DIR>          pythonapp
+01/22/2020  02:24 PM    <DIR>          pythonproject
+               1 File(s)            654 bytes
+               4 Dir(s)  179,594,149,888 bytes free
+
+(env01) C:\Users\lmnop\Documents\PythonClass\pythonproject>
